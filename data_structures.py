@@ -42,3 +42,17 @@ type(x)
 #  Sözlüklerden tek farkı ,key- value durumu, iki nokta kullanımı yoktur.
 
 #  Not: Liste, tuple, set ve dictionary veri yapıları aynı zamanda Python Collections(Arrays) olarak geçmektedir.
+
+#  Sayılar(Numbers): int, float, complex
+
+a = 3.5
+b = 10
+a * 10
+b / 2
+b ** 3
+#  **işlemi ile kübü alınması sağlandı.
+
+#  Tipleri değiştirmek: Yani float verisini integera veya tam tersi işlem için  yukarıda a yı float olarak tanımlamış
+#  bunu integera çevirmek için
+int(a)
+float(b)
