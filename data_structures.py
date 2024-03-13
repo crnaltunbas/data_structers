@@ -108,4 +108,58 @@ long_string[0:14]
 #  çıktısı true olur.
 
 
+# String (Karakter dizisi) Metodları
+# Metod çeşitli görevleri yerine getiren fonksiyon benzeri yapılardır. Diğer bir ifadeyle class yani sınıflar içerisinde
+# tanımlanan fonksyonlardır.
+
+dir(str)
+
+#  len metodu
+#  string ifadenin kaç karakterden oluştuğunu söyler. Boyut bilgisi verir.
+name = "john"
+type(len)
+len(name)
+#  Kullanmış olduğumuz yapının metod mu yoksa fonksiyon mu olduğunu nasıl anlarız?
+#  Eğer bir fonksiyon class yapısının içerisinde kullanıldıysa buna metod denir. Eğer bir class yapısının içerisinde
+#  değilse fonksiyondur.
+
+len("ceren")
+
+#  upper() & lower(): küçük- büyük harf dönüşümleri
+#  upper girilen veriyi büyük harfe dönüştürür
+#  lower  "        "     küçük  "      "
+
+"ceren".upper()
+"CEREN".lower()
+type(upper)
+# upper ve lower yapılarının metod mu yoksa fonksiyon mu olduğunu pycharm sayesinde ctrl+ sol tuş ile upper veya lowerın
+# üstüne tıklarsak bize build.py dosyası açacaktır.Buradan class içinde olup olmamasına ve soldaki boşluğa bakarsak
+# ikisininde class içinde olduğunu yani metod olduğunu gördük.
+
+# replace: karakter değiştirmek
+
+hi = "Hello AI Era"
+#  Amaç l ifadeleri yerine p yazmak
+hi.replace("l", "p")
+
+#  split: böler
+
+"Hello AI Era".split()
+#  Boşluklara göre böler.
+
+
+#  strip: kırpar
+
+" ofofo".strip()
+#  boşluklardan kırpar.
+"ofofo".strip("o")
+#  o- ları kırpar
+
+
+#  capitalize: ilk harfi büyütür
+
+"fof".capitalize()
+#  stringlerde daha bir sürü meted vardır. Bunun için dir(str) yazmak yeterlidir.
+
+
 
