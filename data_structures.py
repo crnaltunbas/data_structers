@@ -56,3 +56,56 @@ b ** 3
 #  bunu integera çevirmek için
 int(a)
 float(b)
+
+#  Karakter dizileri (Strings)
+#  Çift tırnak kullanmakla tek tırnak kullanmak ayı göreve sahiptir.
+
+print("John")
+print('John')
+"John"
+name =  "John"
+#  print() fonksiyonu ekrana bir bilgi paylaşmak istediğimizde genellikle kullanılır.
+
+#  Çok Satırlı Karakter Dizileri
+#  3 tane tek tırnağın veya 3tane çift tırnağın arasına  dizinizi girdiğinizde bunu çok satırlı karakter dizileri olarak
+#  algılayacaktır.
+
+""" Selam!
+ Veri yapıları modülüne hoşgeldin
+ Umarım senin için yararlı olur
+ :) """
+
+#  Veya bu karakter dizinine değişken olarak atayabilirisiniz
+long_string = """ Selam!
+ Veri yapıları modülüne hoşgeldin
+ Umarım senin için yararlı olur
+ :) """
+
+#  Karakter Dizilerinin Elemanlarına Erişmek
+#  Yukarıda name isimli bir string tanımlamıştık bunun içinden herhangi bir harfini veya birinci harfini sormak
+#  istiyorsak bunu aşağıdaki gibi gösterebiliriz:Python köşeli parantezi index olarak algılar.
+
+name
+name[0]
+
+#  Karakter Dizilerinde Slice İşlemi
+
+#  name değişkeninde 0. ile 2. arasındaki değerlerine erişmek istersek aşağıdaki gibi komutlandırmalıyız.
+
+name[0:2]
+#  0 dan başla2 ye kadar git
+
+long_string[0:14]
+
+
+#  String İçerisinde Karakter Sorgulamak
+
+#  python case sensetive bir yazılım dilidir. Bu yüzden büyük-küçük harf önem taşır. Herhangi bir string içerisinde bir
+#  karakter var mı yok mu anlamak için aşağıdaki komutlar kullanılır.
+"veri" in long_string
+#  çıktısı false olur çünkü küçük harfle yazdık.
+"Veri" in long_string
+#  çıktısı true olur.
+
+
+
