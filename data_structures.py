@@ -205,3 +205,53 @@ notes
 notes.insert(2, 99)
 #  2. indexe 99 elemanı eklendi
 
+
+
+#  Sözlük(Dictionary)
+
+#  Değiştirilebilir.
+#  Sırasız(3.7 versiyonundan sonra sıralı özelliğini kazanmıştır.)
+#  Kapsayıcı.
+
+#  key- value
+dictionary = {"REG": "Regression",
+              "LOG": "Logistic Regression",
+              "CART": "Classification and Reg"}
+dictionary["REG"]
+
+dictionary1 = {"REG": ["RMSE", 10],
+              "LOG": ["MSE", 20]}
+dictionary2 = {"REG": 10,
+              "LOG": 20}
+
+dictionary1["LOG"][1]
+
+#  Key Sorgulama
+
+"REG" in dictionary
+
+#  Key'e göre value' ya erişmek
+
+dictionary1["REG"]
+dictionary1.get("REG")
+
+#  Value Değiştirmek
+
+dictionary1["REG"] = ["YSA", 10]
+dictionary1
+
+#  Tüm key'lere erişmek
+
+dictionary.keys()
+dictionary.values()
+
+
+#  Tüm çiftleri Tuple halinde listeye çevirme
+
+dictionary.items()
+
+#  Key- value değerini güncellemek
+#  Girmiş olduğunuz key değeri sözlük içerisinde varsa onu günceller, yoksa yeni key-value oluşturur.
+
+dictionary.update({"RF": 10})
+dictionary
