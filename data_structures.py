@@ -162,4 +162,46 @@ hi.replace("l", "p")
 #  stringlerde daha bir sürü meted vardır. Bunun için dir(str) yazmak yeterlidir.
 
 
+#  Liste (List)
+#  Değiştirilebilir.
+#  Sıralıdır. İndex işlemleri yapılabilir
+#  Kapsayıcıdır. Yani içerisinde birden fazla veri yapısını bulundurabilir.
+
+
+notes = [1, 2, 3, 4]
+type(notes)
+
+names = ["a", "b", "c"]
+
+not_nam = [1, 2, 3, "a", "b", True, [1, 2, 3]]
+
+not_nam[0]
+not_nam[6]
+
+not_nam[6][1]
+type(not_nam[6][1])
+notes[0] = 99
+notes
+not_nam[0:4]
+
+#  Liste Metodları (List Methods)
+
+dir(notes)
+#  Liste metodlarını öğrendik.
+len(notes)
+len(not_nam)
+#  len: builtin python fonksiyonu, boyut bilgisi
+#  append: eleman ekler
+notes
+notes.append(100)
+notes
+
+#  pop: indexe göre eleman siler.
+notes.pop(0)
+notes
+
+#  insert: indexe eleman ekler.
+
+notes.insert(2, 99)
+#  2. indexe 99 elemanı eklendi
 
